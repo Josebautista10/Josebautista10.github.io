@@ -12,12 +12,12 @@ function App() {
       <Fade bottom>
        <Projects/>
       </Fade>
-      <LightSpeed>
-      <Skills right/>
-      </LightSpeed>
-      <LightSpeed>
-      <Certificate left/>
-      </LightSpeed>
+      <Fade>
+      <Skills bottom/>
+      </Fade>
+      <Fade>
+      <Certificate bottom/>
+      </Fade>
     </div>
   )
 }
