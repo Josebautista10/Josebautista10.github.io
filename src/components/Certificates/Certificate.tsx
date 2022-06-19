@@ -47,6 +47,7 @@ export default function Certificate() {
               </div>
             </div>
           ))}
+          {/* Make user scroll when they hit scroll more */}
           <button onClick={() => setShow(!show)} className='inline-flex text-white bg-green-500 border-0 py-2 px-6 mt-5 focus:outline-none hover:bg-green-600 rounded text-lg'>
             Show {show ? 'Less': 'More'}
           </button>
