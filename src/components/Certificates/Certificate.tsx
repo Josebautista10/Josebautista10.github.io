@@ -1,6 +1,8 @@
 import { AcademicCapIcon } from "@heroicons/react/solid";
 import { certificates } from "./data";
 
+
+
 export default function Certificate() {
   return (
     <section id="projects" className="text-gray-400 bg-gray-900 body-font">
