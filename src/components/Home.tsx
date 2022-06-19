@@ -1,5 +1,5 @@
 import TypeAnimation from 'react-type-animation'
-
+import Tilt from 'react-parallax-tilt'
 const Home = () => {
   return (
     <div>
@@ -11,7 +11,15 @@ const Home = () => {
               <br className=' lg:inline-block' />
               <TypeAnimation
                 cursor={true}
-                sequence={['Junior Software Developer', 1000, 'Passion for Front-end', 1000, 'Young and willing to learn', 1000, '']}
+                sequence={[
+                  'Junior Software Developer',
+                  1000,
+                  'Passion for Front-end',
+                  1000,
+                  'Young and willing to learn',
+                  1000,
+                  ''
+                ]}
                 wrapper='h2'
                 repeat={Infinity}
               />
@@ -36,13 +44,18 @@ const Home = () => {
               </a>
             </div>
           </div>
-          <div className='lg:max-w-lg lg:w-full md:w-1/2 w-5/6 flex justify-center'>
-            <img
-              className='object-cover object-center rounded w-1/2'
-              alt='hero'
-              src='./image-1.png'
-            />
-          </div>
+
+          <Tilt
+            className='Tilt'
+          >
+            <div className='lg:max-w-lg lg:w-full md:w-1/2 w-5/6 flex justify-center py-9	'>
+              <img
+                className='object-cover object-center rounded w-1/2'
+                alt='hero'
+                src='./image-1.png'
+              />
+            </div>
+          </Tilt>
         </div>
       </section>
     </div>
