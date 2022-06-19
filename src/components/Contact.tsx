@@ -2,11 +2,15 @@ import axios from 'axios'
 import { useState } from 'react'
 const Contact = () => {
   const [quote, setQuote] = useState(null)
+  const [joke, setJoke] = useState(null)
   const getQuote = () => {
-    
-  axios.get('https://api.kanye.rest').then((res) => setQuote(res.data.quote))
+    axios.get('https://api.kanye.rest').then((res) => setQuote(res.data.quote))
   }
-  console.log(quote)
+
+  const getJoke = () => {
+    axios.get('https://geek-jokes.sameerkumar.website/api?format=json').then((res) => setJoke(res.data.joke))
+  }
+
   return (
     <section id='contact'>
       <div className='container flex justify-center'>
@@ -20,10 +24,35 @@ const Contact = () => {
               <h3 className='text-white sm:text-2xl text-1xl mb-1 font-medium title-font'>
                 Kanye West Famous Quotes
               </h3>
-              {quote ? <p>{quote}</p> : <p> The thought police want to suppress freedom of thought</p>}
+              {quote ? (
+                <p>{quote}</p>
+              ) : (
+                <p> The thought police want to suppress freedom of thought</p>
+              )}
             </div>
-            <button onClick={() => getQuote()}className='inline-flex text-white bg-green-500 border-0 py-1 px-4 mt-5 focus:outline-none hover:bg-green-600 rounded text-lg w-1/4 justify-center'>
+            <button
+              onClick={() => getQuote()}
+              className='inline-flex text-white bg-green-500 border-0 py-1 px-4 mt-5 focus:outline-none hover:bg-green-600 rounded text-lg w-1/4 justify-center'
+            >
               {quote ? 'New' : 'Get'} Quote
+            </button>
+          </div>
+          <div className=' mb-4 flex flex-col'>
+            <div>
+              <h3 className='text-white sm:text-2xl text-1xl mb-1 font-medium title-font'>
+                Random Joke
+              </h3>
+              {joke ? (
+                <p>{joke}</p>
+              ) : (
+                <p> What did the wall say to the other wall? Meet you in the corner.</p>
+              )}
+            </div>
+            <button
+              onClick={() => getJoke()}
+              className='inline-flex text-white bg-green-500 border-0 py-1 px-4 mt-5 focus:outline-none hover:bg-green-600 rounded text-lg w-1/4 justify-center'
+            >
+              {joke ? 'New' : 'Get'} Joke
             </button>
           </div>
         </div>
