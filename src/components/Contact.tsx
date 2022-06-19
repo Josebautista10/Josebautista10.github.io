@@ -8,8 +8,22 @@ const Contact = () => {
   }
 
   const getJoke = () => {
-    axios.get('https://geek-jokes.sameerkumar.website/api?format=json').then((res) => setJoke(res.data.joke))
+    axios
+    .get('https://icanhazdadjoke.com/', {
+      headers: {
+        accept: 'application/json',
+      }
+    })
+    .then((res) => setJoke(res.data.joke))
   }
+
+  axios
+    .get('https://icanhazdadjoke.com/', {
+      headers: {
+        accept: 'application/json',
+      }
+    })
+    .then((res) => console.log(res.data.joke))
 
   return (
     <section id='contact'>
@@ -45,7 +59,11 @@ const Contact = () => {
               {joke ? (
                 <p>{joke}</p>
               ) : (
-                <p> What did the wall say to the other wall? Meet you in the corner.</p>
+                <p>
+                  {' '}
+                  What did the wall say to the other wall? Meet you in the
+                  corner.
+                </p>
               )}
             </div>
             <button
