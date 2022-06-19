@@ -1,9 +1,32 @@
-import React from 'react'
-
+import axios from 'axios'
+import { useState } from 'react'
 const Contact = () => {
+  const [quote, setQuote] = useState(null)
+  const getQuote = () => {
+    
+  axios.get('https://api.kanye.rest').then((res) => setQuote(res.data.quote))
+  }
+  console.log(quote)
   return (
-    <section id='contact' >
+    <section id='contact'>
       <div className='container flex justify-center'>
+        <div className='lg:w-1/2 md:w-1/2 flex flex-col md:mr-auto md:py-8 mt-8 md:mt-0 ml-4'>
+          <h2 className='text-white sm:text-4xl text-3xl mb-1 font-medium title-font'>
+            Fun API's
+          </h2>
+
+          <div className=' mb-4 flex flex-col'>
+            <div>
+              <h3 className='text-white sm:text-2xl text-1xl mb-1 font-medium title-font'>
+                Kanye West Famous Quotes
+              </h3>
+              {quote ? <p>{quote}</p> : <p> The thought police want to suppress freedom of thought</p>}
+            </div>
+            <button onClick={() => getQuote()}className='inline-flex text-white bg-green-500 border-0 py-1 px-4 mt-5 focus:outline-none hover:bg-green-600 rounded text-lg w-1/4 justify-center'>
+              {quote ? 'New' : 'Get'} Quote
+            </button>
+          </div>
+        </div>
         <form
           // netlify
           name='contact'
