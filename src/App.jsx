@@ -4,6 +4,7 @@ import Projects from './components/Projects/Project'
 import Skills from './components/Skills/Skills'
 import './tailwind.css'
 import {Fade, LightSpeed} from 'react-reveal';
+import Contact from './components/Contact'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Fade>
       <Certificate bottom/>
       </Fade>
+      <Contact/>
     </div>
   )
 }
