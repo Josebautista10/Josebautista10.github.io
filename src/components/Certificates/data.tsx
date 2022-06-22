@@ -1,4 +1,4 @@
-export const certificates = [
+const certificates = [
   {
     title: 'Lighthouse Labs Diploma',
     type: 'Diploma of Education',
@@ -38,7 +38,8 @@ export const certificates = [
     title: 'EpicReact Hooks Certificate',
     type: 'EpicReact Certificate',
     description:
-    'Certificate from EpicReact showing that I completed React Hooks Workshop',
-      image: './certificate/epicReact-hooks.png'
+      'Certificate from EpicReact showing that I completed React Hooks Workshop',
+    image: './certificate/epicReact-hooks.png'
   }
 ]
+export default certificates
