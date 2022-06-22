@@ -1,0 +1,12 @@
+name: Static Analysis
+on: [push]
+jobs:
+  Run-Eslint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: '🖥️ Check out repository code'
+        uses: actions/checkout@v2
+      - name: '🚧 Install modules'
+        run: yarn
+      - name: '🍏 Run ESLint'
+        run: node_modules/.bin/eslint .
