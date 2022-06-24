@@ -2,7 +2,6 @@
   "name": "new",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://josebautista10.github.io/portfolioTS",
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
     "@heroicons/react": "^1.0.6",
@@ -24,8 +23,6 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
