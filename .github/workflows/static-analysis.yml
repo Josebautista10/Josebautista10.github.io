@@ -1,12 +1,18 @@
-name: Static Analysis
-on: [push]
+name: website
+
+on: push
+
 jobs:
-  Run-Eslint:
+  publish:
     runs-on: ubuntu-latest
     steps:
-      - name: '🖥️ Check out repository code'
-        uses: actions/checkout@v2
-      - name: '🚧 Install modules'
-        run: yarn
-      - name: '🍏 Run ESLint'
-        run: node_modules/.bin/eslint .
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Deploy to GitHub Pages
+        if: success()
+        uses: crazy-max/ghaction-github-pages@v3
+        with:
+          target_branch: gh-pages
+          build_dir: public
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
