@@ -13,6 +13,15 @@ function Contact() {
     axios.get('https://api.kanye.rest').then((res) => setQuote(res.data.quote))
   }
 
+  const getJoke = () => {
+    axios
+      .get('https://icanhazdadjoke.com/', {
+        headers: {
+          accept: 'application/json'
+        }
+      })
+      .then((res) => setJoke(res.data.joke))
+  }
   const sendEmail = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     emailjs
@@ -31,18 +40,11 @@ function Contact() {
           console.log(error.text)
         }
       )
+    setEmail('')
+    setName('')
+    setMessage('')
     event.currentTarget.reset()
     alert('Message sent')
-  }
-
-  const getJoke = () => {
-    axios
-      .get('https://icanhazdadjoke.com/', {
-        headers: {
-          accept: 'application/json'
-        }
-      })
-      .then((res) => setJoke(res.data.joke))
   }
 
   return (
