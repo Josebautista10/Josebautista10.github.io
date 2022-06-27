@@ -48,7 +48,7 @@ function Home() {
               <img
                 className="object-cover object-center rounded w-1/2"
                 alt="hero"
-                src="./image-1.png"
+                src="./Image-1.png"
               />
             </div>
           </Tilt>

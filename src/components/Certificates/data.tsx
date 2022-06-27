@@ -18,7 +18,7 @@ const certificates = [
     type: 'FreeCodeCamp Certificate',
     description:
       'FreeCodeCamp Certificate showing that I completed the JavaScript and Algorithms course',
-    image: './certificate/Javascript.png'
+    image: './certificate/JavaScript.png'
   },
   {
     title: 'GraphQL With React Certificate',
@@ -32,7 +32,7 @@ const certificates = [
     type: 'FreeCodeCamp Certificate',
     description:
       'Certificate from FreeCodeCamp showing that I completed there 300 hours Web Development course',
-    image: './certificate/CSS.png'
+    image: './certificate/Css.png'
   },
   {
     title: 'EpicReact Hooks Certificate',
