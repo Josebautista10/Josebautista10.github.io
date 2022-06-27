@@ -13,7 +13,7 @@ const projects = [
     description:
       'A weather app that uses an API to fetch the current temperature of the city you input and also a three day forecast',
     image: './project-pics/my-weather.png',
-    link: 'https://reedbarger.com'
+    link: 'https://github.com/Josebautista10/my-weather'
   },
   {
     title: 'Categorizer',
