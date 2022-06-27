@@ -31,6 +31,9 @@ function Contact() {
           console.log(error.text)
         }
       )
+    setEmail('')
+    setName('')
+    setMessage('')
     event.currentTarget.reset()
     alert('Message sent')
   }
