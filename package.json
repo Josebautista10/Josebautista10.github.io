@@ -2,7 +2,7 @@
   "name": "new",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Josebautista10.github.io",
+  "homepage": "https://Josebautista10.github.io/portfolioTS",
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
     "@heroicons/react": "^1.0.6",
