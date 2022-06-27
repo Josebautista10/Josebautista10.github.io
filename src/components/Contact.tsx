@@ -46,13 +46,13 @@ function Contact() {
 
   return (
     <section id="contact">
-      <div className="container flex justify-center">
-        <div className="lg:w-1/2 md:w-1/2 flex flex-col md:mr-auto md:py-8 mt-8 md:mt-0 ml-4">
+      <div className=" flex  md:flex-row flex-col">
+        <div className="lg:w-1/2 sm:w-full flex flex-col md:mr-auto md:py-8 mt-8 md:mt-0 md:ml-4 sm:items-center md:items-start">
           <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
             Fun API&apos;s
           </h2>
 
-          <div className=" mb-4 flex flex-col">
+          <div className=" mb-4 flex flex-col sm:items-center md:items-start">
             <div>
               <h3 className="text-white sm:text-2xl text-1xl mb-1 font-medium title-font">
                 Kanye West Famous Quotes
@@ -66,14 +66,15 @@ function Contact() {
             <button
               type="button"
               onClick={() => getQuote()}
-              className="inline-flex text-white bg-green-500 border-0 py-1 px-4 mt-5 focus:outline-none hover:bg-green-600 rounded text-lg w-1/4 justify-center"
+              className="inline-flex text-white bg-green-500 border-0 py-2 px-6 mt-5 focus:outline-none hover:bg-green-600 rounded text-lg sm:w-1/3 md:w-auto justify-center"
+
             >
               {quote ? 'New' : 'Get'}
               {' '}
               Quote
             </button>
           </div>
-          <div className=" mb-4 flex flex-col">
+          <div className=" mb-4 flex flex-col sm:items-center md:items-start">
             <div>
               <h3 className="text-white sm:text-2xl text-1xl mb-1 font-medium title-font">
                 Random Joke
@@ -91,7 +92,8 @@ function Contact() {
             <button
               type="button"
               onClick={() => getJoke()}
-              className="inline-flex text-white bg-green-500 border-0 py-1 px-4 mt-5 focus:outline-none hover:bg-green-600 rounded text-lg w-1/4 justify-center"
+              className="inline-flex text-white bg-green-500 border-0 py-2 px-6 mt-5 focus:outline-none hover:bg-green-600 rounded text-lg sm:w-1/3 md:w-auto justify-center"
+
             >
               {joke ? 'New' : 'Get'}
               {' '}
@@ -99,9 +101,10 @@ function Contact() {
             </button>
           </div>
         </div>
+
         <form
           name="contact"
-          className="lg:w-1/2 md:w-1/2 flex justify-center flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
+          className="lg:w-1/2 md:w-1/2 flex justify-center flex-col md:ml-auto w-full sm:py-2 mt-8 md:mt-0 sm:px-4"
           onSubmit={sendEmail}
         >
           <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
