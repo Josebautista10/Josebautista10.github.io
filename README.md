@@ -1,5 +1,19 @@
 # My new and improved Portfolio
-For this project I wanted to make a completely new portfolio using TypeScript and a much better design for a users. 
+For this project I wanted to make a completely new portfolio using TypeScript and a much better design for users. For styling I used [Tailwind CSS](https://tailwindcss.com/) with the use of [React Reveal](https://www.react-reveal.com/) and [React Type Animation](https://react-type-animation.vercel.app/) for some animations. I wanted to try something new so I deployed it using Github Pages. Here are both portfolios for comparison: 
+ 
+* [Old Portfolio](https://joses-portfolio.vercel.app/)
 
+* [New Portfolio](https://josebautista10.github.io/portfolioTS)
 
-I wanted to get out of my comfort zone for this so I decided to build it on [Next.js](https://nextjs.org/) with [Tailwind CSS](https://tailwindcss.com/) for my framework. The app is deployed on [Vercel](https://vercel.com/home?utm_source=next-site&utm_medium=banner&utm_campaign=next-website) so please have take a moment to take a look at it here [My Portfolio](https://joses-portfolio.vercel.app/). 
+## Stack
+* React.js
+* TypeScript
+* Tailwind CSS
+
+## Technologies  
+* [React Reveal](https://www.react-reveal.com/) 
+* [React Type Animation](https://react-type-animation.vercel.app/)
+* [React Parallax Tilt](https://mkosir.github.io/react-parallax-tilt/?path=/story/react-parallax-tilt--default)
+* [EmailJs](https://www.emailjs.com/docs/examples/reactjs/)
+* [Kanye Quote Generator]('https://api.kanye.rest')
+* [Dad Joke API](https://icanhazdadjoke.com/)
