@@ -104,16 +104,12 @@ function Contact() {
 
         <form
           name="contact"
-          className="lg:w-1/2 md:w-1/2 flex justify-center flex-col md:ml-auto w-full sm:py-2 mt-8 md:mt-0 sm:px-4"
+          className="lg:w-1/2 md:w-1/2 flex justify-center flex-col md:ml-auto w-full sm:py-3 mt-8 md:mt-0 sm:px-4"
           onSubmit={sendEmail}
         >
           <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
-            Hire Me
+            Let&apos;s Talk!
           </h2>
-          <p className="leading-relaxed mb-5">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
-            suscipit officia aspernatur veritatis. Asperiores, aliquid?
-          </p>
           <div className="relative mb-4">
             <label htmlFor="name" className="leading-7 text-sm text-gray-400">
               Name
