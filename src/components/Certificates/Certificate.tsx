@@ -31,10 +31,10 @@ export default function Certificate() {
               <div className="flex relative">
                 <img
                   alt={certificate.title}
-                  className="absolute inset-0 w-full h-full object-cover object-center"
+                  className="absolute inset-0 w-full h-full object-cover object-center "
                   src={certificate.image}
                 />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100 transition duration-500">
                   <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
                     {certificate.type}
                   </h2>
@@ -50,7 +50,7 @@ export default function Certificate() {
           <button
             type="button"
             onClick={() => setShow(!show)}
-            className="inline-flex text-white bg-green-500 border-0 py-2 px-6 mt-5 focus:outline-none hover:bg-green-600 rounded text-lg"
+            className="inline-flex text-white bg-green-500 border-0 py-2 px-6 mt-5 focus:outline-none hover:bg-green-600 rounded text-lg transition duration-500"
           >
             Show
             {' '}

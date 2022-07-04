@@ -75,7 +75,7 @@ function Contact() {
               <button
                 type="button"
                 onClick={() => getQuote()}
-                className="inline-flex text-white bg-green-500 border-0 py-2 px-6 mt-5 focus:outline-none hover:bg-green-600 rounded text-lg w-1/3 md:w-auto justify-center"
+                className="inline-flex text-white bg-green-500 border-0 py-2 px-6 mt-5 focus:outline-none hover:bg-green-600 rounded text-lg w-1/3 md:w-auto justify-center transition duration-500"
 
               >
                 {quote ? 'New' : 'Get'}
@@ -101,7 +101,7 @@ function Contact() {
               <button
                 type="button"
                 onClick={() => getJoke()}
-                className="inline-flex text-white bg-green-500 border-0 py-2 px-6 mt-5 focus:outline-none hover:bg-green-600 rounded text-lg w-1/3 md:w-auto justify-center"
+                className="inline-flex text-white bg-green-500 border-0 py-2 px-6 mt-5 focus:outline-none hover:bg-green-600 rounded text-lg w-1/3 md:w-auto justify-center transition duration-500"
 
               >
                 {joke ? 'New' : 'Get'}
@@ -163,7 +163,7 @@ function Contact() {
           </div>
           <button
             type="submit"
-            className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+            className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg transition duration-500"
           >
             Submit
           </button>
