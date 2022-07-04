@@ -25,6 +25,8 @@ export default function Project() {
               href={project.link}
               key={project.image}
               className="sm:w-1/2 w-100 p-4"
+              target="_blank"
+              rel="noreferrer"
             >
               <div className="flex relative">
                 <img
@@ -32,7 +34,7 @@ export default function Project() {
                   className="absolute inset-0 w-full h-full object-cover object-center"
                   src={project.image}
                 />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100 transition duration-500">
                   <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
                     {project.stack}
                   </h2>

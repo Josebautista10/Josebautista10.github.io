@@ -1,5 +1,6 @@
 import TypeAnimation from 'react-type-animation'
 import Tilt from 'react-parallax-tilt'
+import { AiOutlineGithub, AiFillLinkedin } from 'react-icons/ai'
 
 function Home() {
   return (
@@ -26,27 +27,49 @@ function Home() {
               />
             </h1>
             <p className="mb-8 leading-relaxed">
-              I&apos;m a full stack junior developer with a passion for front-end. My
-              favorite reason I code is because I get a chance to build
-              something out of nothing.
+              I&apos;m a full stack junior developer with a passion for
+              front-end. My favorite reason I code is because I get a chance to
+              build something out of nothing.
             </p>
-            <div className="flex justify-center">
-              <a
-                href="#contact"
-                className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"
-              >
-                Contact Me
-              </a>
+            <div className="flex justify-center md:justify-between flex-col md:flex-row md:w-full lg:w-1/4">
+              <div>
+                <a
+                  href="#contact"
+                  className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg transition duration-500"
+                >
+                  Contact Me
+                </a>
+              </div>
+              <div className="flex sm:text-4xl text-3xl flex justify-evenly mt-3">
+                <a
+                  href="https://github.com/Josebautista10"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="transition duration-500 hover:text-white"
+                >
+                  <AiOutlineGithub />
+
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/jose-bautista-a323b6217/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="transition duration-500 hover:text-blue-400"
+
+                >
+                  <AiFillLinkedin />
+
+                </a>
+
+              </div>
 
             </div>
           </div>
 
-          <Tilt
-            className="Tilt"
-          >
-            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 flex justify-center py-9">
+          <Tilt className="Tilt">
+            <div className="lg:max-w-lg lg:w-full md:w-full flex justify-center py-9">
               <img
-                className="object-cover object-center rounded w-1/2"
+                className="object-cover object-center rounded w-1/2 md:w-full"
                 alt="hero"
                 src="./Image-1.png"
               />

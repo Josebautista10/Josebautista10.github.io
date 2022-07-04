@@ -49,19 +49,19 @@ function Contact() {
 
   return (
     <section id="contact">
-      <div className="flex flex-col w-full items-center mt-3">
+      <div className="flex flex-col w-full items-center my-10 ">
         <PhoneIcon className="mx-auto inline-block w-10 mb-4" />
         <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
           Contact
         </h1>
       </div>
-      <div className=" flex  md:flex-row flex-col">
-        <div className="lg:w-1/2 sm:w-full flex flex-col md:mr-auto md:py-8 mt-8 md:mt-0 md:ml-4 sm:items-center md:items-start">
-          <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
+      <div className=" flex  md:flex-row flex-col p-3">
+        <div className="lg:w-1/2 sm:w-full flex flex-col md:mr-auto md:py-8 mt-8 md:mt-0 md:ml-4 items-center md:items-start">
+          <h2 className="text-white text-4xl md:text-3xl mb-4 font-medium title-font ">
             Fun API&apos;s
           </h2>
           <div className="flex flex-col justify-evenly h-full">
-            <div className=" mb-4 flex flex-col sm:items-center md:items-start">
+            <div className=" mb-4 flex flex-col items-center md:items-start">
               <div>
                 <h3 className="text-white sm:text-2xl text-1xl mb-1 font-medium title-font">
                   Kanye West Famous Quotes
@@ -75,7 +75,7 @@ function Contact() {
               <button
                 type="button"
                 onClick={() => getQuote()}
-                className="inline-flex text-white bg-green-500 border-0 py-2 px-6 mt-5 focus:outline-none hover:bg-green-600 rounded text-lg sm:w-1/3 md:w-auto justify-center"
+                className="inline-flex text-white bg-green-500 border-0 py-2 px-6 mt-5 focus:outline-none hover:bg-green-600 rounded text-lg w-1/3 md:w-auto justify-center transition duration-500"
 
               >
                 {quote ? 'New' : 'Get'}
@@ -83,7 +83,7 @@ function Contact() {
                 Quote
               </button>
             </div>
-            <div className=" mb-4 flex flex-col sm:items-center md:items-start">
+            <div className=" mb-4 flex flex-col items-center md:items-start">
               <div>
                 <h3 className="text-white sm:text-2xl text-1xl mb-1 font-medium title-font">
                   Random Joke
@@ -101,7 +101,7 @@ function Contact() {
               <button
                 type="button"
                 onClick={() => getJoke()}
-                className="inline-flex text-white bg-green-500 border-0 py-2 px-6 mt-5 focus:outline-none hover:bg-green-600 rounded text-lg sm:w-1/3 md:w-auto justify-center"
+                className="inline-flex text-white bg-green-500 border-0 py-2 px-6 mt-5 focus:outline-none hover:bg-green-600 rounded text-lg w-1/3 md:w-auto justify-center transition duration-500"
 
               >
                 {joke ? 'New' : 'Get'}
@@ -163,7 +163,7 @@ function Contact() {
           </div>
           <button
             type="submit"
-            className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+            className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg transition duration-500"
           >
             Submit
           </button>
