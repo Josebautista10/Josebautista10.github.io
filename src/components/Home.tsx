@@ -31,7 +31,7 @@ function Home() {
               front-end. My favorite reason I code is because I get a chance to
               build something out of nothing.
             </p>
-            <div className="flex justify-center md:justify-between flex-col md:flex-row md:w-full lg:w-1/4">
+            <div className="flex justify-center md:justify-between flex-col md:flex-row md:w-full">
               <div>
                 <a
                   href="#contact"
@@ -40,7 +40,7 @@ function Home() {
                   Contact Me
                 </a>
               </div>
-              <div className="flex sm:text-4xl text-3xl flex justify-evenly mt-3">
+              <div className="flex sm:text-4xl text-3xl justify-evenly mt-3 items-center md:m-0 md:w-1/4">
                 <a
                   href="https://github.com/Josebautista10"
                   target="_blank"
@@ -69,7 +69,7 @@ function Home() {
           <Tilt className="Tilt">
             <div className="lg:max-w-lg lg:w-full md:w-full flex justify-center py-9">
               <img
-                className="object-cover object-center rounded w-1/2 md:w-full"
+                className="object-cover object-center rounded w-1/2"
                 alt="hero"
                 src="./Image-1.png"
               />
