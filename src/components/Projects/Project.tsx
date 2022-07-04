@@ -25,6 +25,8 @@ export default function Project() {
               href={project.link}
               key={project.image}
               className="sm:w-1/2 w-100 p-4"
+              target="_blank"
+              rel="noreferrer"
             >
               <div className="flex relative">
                 <img
